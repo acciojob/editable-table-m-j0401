@@ -1,11 +1,12 @@
 
 import React from "react";
 import './../styles/App.css';
+import Tables2 from "./Tables2";
 
 const App = () => {
   return (
     <div>
-        {/* Do not remove the main div */}
+        <Tables2/>
     </div>
   )
 }
