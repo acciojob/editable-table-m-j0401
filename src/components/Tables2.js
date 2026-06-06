@@ -41,7 +41,7 @@ const Tables2 = () => {
 
   function handleClick() {
     console.log(
-      "Edited Rows:",
+      "Edited rows:",
       Object.values(editedRows.current)
     );
   }
@@ -59,10 +59,12 @@ const Tables2 = () => {
 
         <tbody>
           {rows.map((row) => (
+            <form>
             <tr key={row.id}>
               <td>{row.id}</td>
 
               <td>
+                
                 <input
                   type="text"
                   value={row.name}
@@ -87,9 +89,11 @@ const Tables2 = () => {
                       e.target.value
                     )
                   }
+                  
                 />
               </td>
             </tr>
+            </form>
           ))}
         </tbody>
       </table>
