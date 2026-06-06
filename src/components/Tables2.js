@@ -2,12 +2,12 @@
 import React, { useRef, useState } from "react";
 
 const initialData = [
-  { id: 1, name: "John", age: 25 },
-  { id: 2, name: "Alice", age: 30 },
-  { id: 3, name: "Bob", age: 28 },
-  { id: 4, name: "Emma", age: 22 },
-  { id: 5, name: "Michael", age: 35 },
-  { id: 6, name: "Sophia", age: 27 },
+  { id: 1, name: "Ram", age: 25 },
+  { id: 2, name: "Shyam", age: 30 },
+  { id: 3, name: "Ali", age: 35 },
+  { id: 4, name: "Shaw", age: 20 },
+  { id: 5, name: "Tavneet", age: 50 },
+  { id: 6, name: "Lakshmi", age: 40 },
 ];
 
 const Tables2 = () => {
