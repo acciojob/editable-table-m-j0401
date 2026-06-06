@@ -39,7 +39,8 @@ const Tables2 = () => {
     editedRows.current[id] = updatedRow;
   }
 
-  function handleClick() {
+  function handleClick(e) {
+    e.preventDefault();
     console.log(
       "Edited rows:",
       Object.values(editedRows.current)
@@ -48,6 +49,7 @@ const Tables2 = () => {
 
   return (
     <>
+    <form onClick={handleClick}>
       <table border="1" cellPadding="10">
         <thead>
           <tr>
@@ -59,7 +61,7 @@ const Tables2 = () => {
 
         <tbody>
           {rows.map((row) => (
-            <form>
+            
             <tr key={row.id}>
               <td>{row.id}</td>
 
@@ -93,16 +95,18 @@ const Tables2 = () => {
                 />
               </td>
             </tr>
-            </form>
+            
           ))}
         </tbody>
       </table>
+      
 
       <br />
 
-      <button onClick={handleClick}>
+      <button >
         Save Changes
       </button>
+      </form>
     </>
   );
 };
