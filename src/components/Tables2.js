@@ -2,7 +2,7 @@
 import React, { useRef, useState } from "react";
 
 const initialData = [
-  { id: 1, name: "Ram", age: 25 },
+  { id:1, name: "Ram", age: 25 },
   { id: 2, name: "Shyam", age: 30 },
   { id: 3, name: "Ali", age: 35 },
   { id: 4, name: "Shaw", age: 20 },
@@ -49,7 +49,7 @@ const Tables2 = () => {
 
   return (
     <>
-    <form onClick={handleClick}>
+    <form>
       <table border="1" cellPadding="10">
         <thead>
           <tr>
@@ -103,7 +103,7 @@ const Tables2 = () => {
 
       <br />
 
-      <button >
+      <button onClick={handleClick}>
         Save Changes
       </button>
       </form>
