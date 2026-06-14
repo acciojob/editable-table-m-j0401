@@ -39,13 +39,25 @@ const Tables2 = () => {
     editedRows.current[id] = updatedRow;
   }
 
+  // function handleClick(e) {
+  //   e.preventDefault();
+  //   console.log(
+  //     "Edited rows:",
+  //     Object.values(editedRows.current)
+  //   );
+  // }   
   function handleClick(e) {
-    e.preventDefault();
-    console.log(
-      "Edited rows:",
-      Object.values(editedRows.current)
-    );
-  }
+  e.preventDefault();
+
+  const edited = Object.values(editedRows.current).map(
+    (row) => ({
+      ...row,
+      age: Number(row.age),
+    })
+  );
+
+  console.log("Edited rows:", edited);
+}
 
   return (
     <>
